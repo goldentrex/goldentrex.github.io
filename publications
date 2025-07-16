@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Gaya – Publications</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      padding: 40px 20px 20px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .pub {
+      margin-bottom: 30px;
+    }
+    .pub-title {
+      font-weight: bold;
+      font-size: 1.05em;
+    }
+    .pub-authors {
+      font-size: 0.95em;
+      color: #555;
+    }
+    .pub-venue {
+      font-size: 0.9em;
+      color: #777;
+    }
+    .pub-link {
+      display: inline-block;
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .pub-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Publications</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <div class="pub">
+      <div class="pub-title">MuChaPro: Multichannel Projection Despeckling</div>
+      <div class="pub-authors">Victor Gaya, Loïc Denis, Florence Tupin, Béatrice Pinel-Puysségur</div>
+      <div class="pub-venue">IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2025 (submitted)</div>
+      <a class="pub-link" href="https://doi.org/10.1109/TGRS.XXXX.XXXXXXX" target="_blank">DOI</a>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">Unsupervised SAR Denoising Using Blind-Spot Networks</div>
+      <div class="pub-authors">Victor Gaya, Loïc Denis, Florence Tupin, Béatrice Pinel-Puysségur</div>
+      <div class="pub-venue">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2024</div>
+      <a class="pub-link" href="https://doi.org/10.1109/JSTARS.XXXX.XXXXXXX" target="_blank">DOI</a>
+    </div>
+
+    <!-- Add more publications here as needed -->
+  </main>
+
+  <footer>
+    © 2025 Victor Gaya – All rights reserved
+  </footer>
+</body>
+</html>
