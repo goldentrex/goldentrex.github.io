@@ -102,6 +102,77 @@ a:hover {
   color: var(--accent-dark);
   text-decoration: underline;
 }
+.contact-list {
+  margin: 0;
+  padding: 0;
+}
+.contact-row {
+  display: flex;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+.contact-row:last-child {
+  border-bottom: none;
+}
+.contact-row dt {
+  min-width: 80px;
+  font-weight: 600;
+  color: #4a5a6a;
+  font-size: 0.88em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+.contact-row dd {
+  margin: 0;
+  font-size: 1em;
+  color: var(--main-color);
+}
+.contact-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 0.98em;
+}
+.profile-link:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+.profile-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pub-item {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.pub-item:last-child {
+  border-bottom: none;
+}
+.pub-title {
+  font-size: 1.02em;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.pub-meta {
+  font-size: 0.9em;
+  color: #4a5a6a;
+}
 @media (max-width: 600px) {
   header, main, .card {
     padding-left: 8px;

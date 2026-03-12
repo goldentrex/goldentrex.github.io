@@ -7,11 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="final_picture.JPEG" alt="Victor Gaya Photo">
-    <h1>Victor Gaya</h1>
-    <p>PhD Candidate – Artificial Intelligence for SAR Imaging</p>
-  </header>
+  <div id="site-header"></div>
+  <script src="header.js"></script>
   <nav>
     <a href="index.html">Home</a>
     <a href="publications.html">Publications</a>
@@ -22,9 +19,19 @@
   <main>
     <section class="card">
       <h2>Publications</h2>
-      <ul>
-        <li><strong>Gaya, V.</strong>, et al. <a href="https://ieeexplore.ieee.org/document/10642047" target="_blank">"Self-Supervised Learning of Multi-Modal Cooperation for SAR Despeckling"</a> <em>IGARSS</em>, 2024.</li>
-        <li><strong>Gaya, V.</strong>, et al. <a href="https://telecom-paris.hal.science/hal-04144686v1" target="_blank">"Débruitage multi-modal d'images radar à synthèse d'ouverture par apprentissage profond auto-supervisé</a> <em>GRETSI</em>, 2023.</li>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-title"><a href="https://theses.hal.science/tel-05480014" target="_blank">Deep learning for SAR image enhancement: multi-modal fusion and interferometric denoising</a></div>
+          <div class="pub-meta"><strong>Gaya, V.</strong> — PhD thesis, <em>Institut Polytechnique de Paris, Télécom Paris</em>, 2025.</div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/10642047" target="_blank">Self-Supervised Learning of Multi-Modal Cooperation for SAR Despeckling</a></div>
+          <div class="pub-meta"><strong>Gaya, V.</strong>, et al. — Conference, <em>IGARSS</em>, 2024.</div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-title"><a href="https://telecom-paris.hal.science/hal-04144686v1" target="_blank">Débruitage multi-modal d'images radar à synthèse d'ouverture par apprentissage profond auto-supervisé</a></div>
+          <div class="pub-meta"><strong>Gaya, V.</strong>, et al. — Conference, <em>GRETSI</em>, 2023.</div>
+        </li>
       </ul>
     </section>
   </main>
