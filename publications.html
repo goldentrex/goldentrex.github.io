@@ -1,42 +1,228 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victor Gaya – Publications</title>
+  <title>Publications — Victor Gaya</title>
+  <meta name="description" content="Publications by Victor Gaya on deep learning for SAR and optical remote sensing: journal articles, conference papers and PhD thesis." />
+  <meta name="author" content="Victor Gaya" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%231f6f9e'/%3E%3Ctext%20x='32'%20y='44'%20font-family='Georgia,serif'%20font-size='32'%20font-weight='700'%20fill='white'%20text-anchor='middle'%3EVG%3C/text%3E%3C/svg%3E" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Publications — Victor Gaya" />
+  <meta property="og:description" content="Journal articles, conference papers and PhD thesis on deep learning for remote sensing." />
+  <meta property="og:image" content="https://goldentrex.github.io/final_picture.JPEG" />
+  <meta property="og:url" content="https://goldentrex.github.io/publications.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches))
+        document.documentElement.classList.add('dark');
+      else if (t === 'light') document.documentElement.classList.add('light');
+    } catch (e) {}
+  </script>
 </head>
 <body>
-  <div id="site-header"></div>
-  <script src="header.js"></script>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="publications.html">Publications</a>
-    <a href="education.html">Education & Experience</a>
-    <a href="resume_VG.pdf" target="_blank">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html">Victor Gaya</a>
+    <nav class="topbar__nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="education.html">Education &amp; Experience</a>
+      <a href="resume_VG.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
     <section class="card">
       <h2>Publications</h2>
-      <ul class="pub-list">
-        <li class="pub-item">
-          <div class="pub-title"><a href="https://theses.hal.science/tel-05480014" target="_blank">Deep learning for SAR image enhancement: multi-modal fusion and interferometric denoising</a></div>
-          <div class="pub-meta"><strong>Gaya, V.</strong> — PhD thesis, <em>Institut Polytechnique de Paris, Télécom Paris</em>, 2025.</div>
-        </li>
-        <li class="pub-item">
-          <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/10642047" target="_blank">Self-Supervised Learning of Multi-Modal Cooperation for SAR Despeckling</a></div>
-          <div class="pub-meta"><strong>Gaya, V.</strong>, et al. — Conference, <em>IGARSS</em>, 2024.</div>
-        </li>
-        <li class="pub-item">
-          <div class="pub-title"><a href="https://telecom-paris.hal.science/hal-04144686v1" target="_blank">Débruitage multi-modal d'images radar à synthèse d'ouverture par apprentissage profond auto-supervisé</a></div>
-          <div class="pub-meta"><strong>Gaya, V.</strong>, et al. — Conference, <em>GRETSI</em>, 2023.</div>
-        </li>
-      </ul>
+
+      <div class="pub-toolbar">
+        <span class="pub-toolbar__label">Sort</span>
+        <div class="segmented" role="group" aria-label="Sort publications">
+          <button type="button" data-sort="chrono" aria-pressed="true">Chronological</button>
+          <button type="button" data-sort="type" aria-pressed="false">By type</button>
+        </div>
+      </div>
+
+      <div id="pub-list" class="pub-list">
+
+        <article class="pub-item" data-type="journal" data-year="2026">
+          <div class="pub-item__head">
+            <span class="pub-badge pub-badge--journal">Journal</span>
+            <span class="pub-badge pub-badge--oa">Open access</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <div class="pub-title">
+            <a href="https://doi.org/10.1109/JSTARS.2026.3722046" target="_blank" rel="noopener">Self-supervised interferogram restoration by regularized inversion of despeckled projections</a>
+          </div>
+          <div class="pub-authors"><span class="me">V. Gaya</span>, L. Denis, B. Pinel-Puysségur, T. Bultingaire, F. Tupin</div>
+          <div class="pub-venue">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (Early Access)</div>
+          <div class="pub-actions">
+            <a class="pub-action" href="https://doi.org/10.1109/JSTARS.2026.3722046" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
+              DOI
+            </a>
+            <a class="pub-action" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=11651458" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              PDF
+            </a>
+            <button class="pub-action" type="button" data-bibtex-toggle aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"/></svg>
+              BibTeX
+            </button>
+          </div>
+          <div class="pub-bibtex" hidden>
+<pre>@article{gaya2026interferogram,
+  author  = {Gaya, Victor and Denis, Lo{\"i}c and Pinel-Puyss{\'e}gur, B{\'e}atrice
+             and Bultingaire, Thomas and Tupin, Florence},
+  title   = {Self-Supervised Interferogram Restoration by Regularized Inversion
+             of Despeckled Projections},
+  journal = {IEEE Journal of Selected Topics in Applied Earth Observations and
+             Remote Sensing},
+  year    = {2026},
+  pages   = {1--16},
+  doi     = {10.1109/JSTARS.2026.3722046}
+}</pre>
+            <button class="pub-action pub-bibtex__copy" type="button" data-bibtex-copy>Copy</button>
+          </div>
+        </article>
+
+        <article class="pub-item" data-type="thesis" data-year="2025">
+          <div class="pub-item__head">
+            <span class="pub-badge">Thesis</span>
+            <span class="pub-badge pub-badge--oa">Open access</span>
+            <span class="pub-year">2025</span>
+          </div>
+          <div class="pub-title">
+            <a href="https://theses.hal.science/tel-05480014" target="_blank" rel="noopener">Deep learning for SAR image enhancement: multi-modal fusion and interferometric denoising</a>
+          </div>
+          <div class="pub-authors"><span class="me">V. Gaya</span></div>
+          <div class="pub-venue">PhD thesis, Institut Polytechnique de Paris, Télécom Paris</div>
+          <div class="pub-actions">
+            <a class="pub-action" href="https://theses.hal.science/tel-05480014" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
+              HAL
+            </a>
+            <a class="pub-action" href="https://theses.hal.science/tel-05480014/document" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              PDF
+            </a>
+            <button class="pub-action" type="button" data-bibtex-toggle aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"/></svg>
+              BibTeX
+            </button>
+          </div>
+          <div class="pub-bibtex" hidden>
+<pre>@phdthesis{gaya2025deep,
+  author = {Gaya, Victor},
+  title  = {Deep Learning for {SAR} Image Enhancement: Multi-Modal Fusion
+            and Interferometric Denoising},
+  school = {Institut Polytechnique de Paris, T{\'e}l{\'e}com Paris},
+  year   = {2025},
+  url    = {https://theses.hal.science/tel-05480014}
+}</pre>
+            <button class="pub-action pub-bibtex__copy" type="button" data-bibtex-copy>Copy</button>
+          </div>
+        </article>
+
+        <article class="pub-item" data-type="conference" data-year="2024">
+          <div class="pub-item__head">
+            <span class="pub-badge">Conference</span>
+            <span class="pub-year">2024</span>
+          </div>
+          <div class="pub-title">
+            <a href="https://doi.org/10.1109/IGARSS53475.2024.10642047" target="_blank" rel="noopener">Self-Supervised Learning of Multi-Modal Cooperation for SAR Despeckling</a>
+          </div>
+          <div class="pub-authors"><span class="me">V. Gaya</span>, E. Dalsasso, L. Denis, F. Tupin, B. Pinel-Puysségur, C. Guérin</div>
+          <div class="pub-venue">IGARSS 2024 — IEEE International Geoscience and Remote Sensing Symposium, Athens, Greece</div>
+          <div class="pub-actions">
+            <a class="pub-action" href="https://doi.org/10.1109/IGARSS53475.2024.10642047" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
+              DOI
+            </a>
+            <a class="pub-action" href="https://telecom-paris.hal.science/hal-04676452/document" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              PDF
+            </a>
+            <button class="pub-action" type="button" data-bibtex-toggle aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"/></svg>
+              BibTeX
+            </button>
+          </div>
+          <div class="pub-bibtex" hidden>
+<pre>@inproceedings{gaya2024selfsupervised,
+  author    = {Gaya, Victor and Dalsasso, Emanuele and Denis, Lo{\"i}c
+               and Tupin, Florence and Pinel-Puyss{\'e}gur, B{\'e}atrice
+               and Gu{\'e}rin, Cyrielle},
+  title     = {Self-Supervised Learning of Multi-Modal Cooperation for {SAR} Despeckling},
+  booktitle = {IGARSS 2024 - IEEE International Geoscience and Remote Sensing Symposium},
+  year      = {2024},
+  address   = {Athens, Greece},
+  doi       = {10.1109/IGARSS53475.2024.10642047}
+}</pre>
+            <button class="pub-action pub-bibtex__copy" type="button" data-bibtex-copy>Copy</button>
+          </div>
+        </article>
+
+        <article class="pub-item" data-type="conference" data-year="2023">
+          <div class="pub-item__head">
+            <span class="pub-badge">Conference</span>
+            <span class="pub-badge pub-badge--oa">Open access</span>
+            <span class="pub-year">2023</span>
+          </div>
+          <div class="pub-title">
+            <a href="https://telecom-paris.hal.science/hal-04144686" target="_blank" rel="noopener">Débruitage multi-modal d'images radar à synthèse d'ouverture par apprentissage profond auto-supervisé</a>
+          </div>
+          <div class="pub-authors"><span class="me">V. Gaya</span>, E. Dalsasso, L. Denis, F. Tupin, B. Pinel-Puysségur, C. Guérin</div>
+          <div class="pub-venue">GRETSI 2023 — XXIXe Colloque Francophone de Traitement du Signal et des Images, Grenoble, France (in French)</div>
+          <div class="pub-actions">
+            <a class="pub-action" href="https://telecom-paris.hal.science/hal-04144686" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
+              HAL
+            </a>
+            <a class="pub-action" href="https://telecom-paris.hal.science/hal-04144686/document" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              PDF
+            </a>
+            <button class="pub-action" type="button" data-bibtex-toggle aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"/></svg>
+              BibTeX
+            </button>
+          </div>
+          <div class="pub-bibtex" hidden>
+<pre>@inproceedings{gaya2023debruitage,
+  author    = {Gaya, Victor and Dalsasso, Emanuele and Denis, Lo{\"i}c
+               and Tupin, Florence and Pinel-Puyss{\'e}gur, B{\'e}atrice
+               and Gu{\'e}rin, Cyrielle},
+  title     = {D{\'e}bruitage multi-modal d'images radar {\`a} synth{\`e}se
+               d'ouverture par apprentissage profond auto-supervis{\'e}},
+  booktitle = {GRETSI 2023 - XXIXe Colloque Francophone de Traitement du Signal
+               et des Images},
+  year      = {2023},
+  address   = {Grenoble, France},
+  url       = {https://telecom-paris.hal.science/hal-04144686}
+}</pre>
+            <button class="pub-action pub-bibtex__copy" type="button" data-bibtex-copy>Copy</button>
+          </div>
+        </article>
+
+      </div>
     </section>
   </main>
+
   <footer>
-    © 2025 Victor Gaya – <a href="https://github.com/goldentrex">GitHub</a>
+    © <span data-current-year>2026</span> Victor Gaya ·
+    <a href="https://github.com/goldentrex" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://scholar.google.com/citations?user=8nIp1XUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
   </footer>
+  <script src="header.js"></script>
+  <script src="publications.js"></script>
 </body>
 </html>

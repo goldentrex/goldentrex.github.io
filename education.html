@@ -1,59 +1,92 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victor Gaya – Education & Experience</title>
+  <title>Education &amp; Experience — Victor Gaya</title>
+  <meta name="description" content="Academic background and research positions of Victor Gaya: NUS Research Fellow, PhD at Télécom Paris / CEA, engineering degree at ISEN Lille." />
+  <meta name="author" content="Victor Gaya" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%231f6f9e'/%3E%3Ctext%20x='32'%20y='44'%20font-family='Georgia,serif'%20font-size='32'%20font-weight='700'%20fill='white'%20text-anchor='middle'%3EVG%3C/text%3E%3C/svg%3E" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Education &amp; Experience — Victor Gaya" />
+  <meta property="og:description" content="Academic background and research positions of Victor Gaya." />
+  <meta property="og:image" content="https://goldentrex.github.io/final_picture.JPEG" />
+  <meta property="og:url" content="https://goldentrex.github.io/education.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches))
+        document.documentElement.classList.add('dark');
+      else if (t === 'light') document.documentElement.classList.add('light');
+    } catch (e) {}
+  </script>
 </head>
 <body>
-  <div id="site-header"></div>
-  <script src="header.js"></script>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="publications.html">Publications</a>
-    <a href="education.html">Education & Experience</a>
-    <a href="resume_VG.pdf" target="_blank">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html">Victor Gaya</a>
+    <nav class="topbar__nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="education.html">Education &amp; Experience</a>
+      <a href="resume_VG.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
     <section class="card">
       <h2>Experience</h2>
-      <div class="edu-block">
-        <h3>Research Fellow – National University of Singapore (NUS)</h3>
-        <p>2026 – present</p>
-        <ul>
-          <li>Working on foundation models for remote sensing using teacher-student frameworks.</li>
-          <li>Research on complex-valued models for SAR data processing.</li>
-          <li>Inpainting with generative models applied to remote sensing imagery.</li>
-        </ul>
-      </div>
-      <div class="edu-block">
-        <h3>PhD Researcher – CEA / Télécom Paris</h3>
-        <p>2022 – 2025</p>
-        <ul>
-          <li>Development of deep learning methods for SAR image analysis (despeckling, denoising).</li>
-          <li>Multi-modal optical/SAR fusion with self-supervised learning approaches.</li>
-          <li>InSAR phase denoising for 3D reconstruction, grounded in statistical noise modeling.</li>
-          <li>Results presented at international conferences (IGARSS 2024, GRETSI 2023).</li>
-        </ul>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__date">2026 – present</div>
+          <h3>Research Fellow — National University of Singapore (NUS)</h3>
+          <ul>
+            <li>Deep learning for optical and SAR remote sensing.</li>
+            <li>Co-supervising students on vision-language models (VLMs), InSAR, cross-modal registration, diffusion-based image translation and calibration.</li>
+            <li>Personal research on SAR polarimetry and physics-informed models.</li>
+          </ul>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2022 – 2025</div>
+          <h3>PhD Researcher — CEA / Télécom Paris</h3>
+          <ul>
+            <li>Deep learning methods for SAR image analysis (despeckling, denoising).</li>
+            <li>Multi-modal optical/SAR fusion with self-supervised learning approaches.</li>
+            <li>InSAR phase denoising for 3D reconstruction, grounded in statistical noise modeling.</li>
+            <li>Results presented at international conferences (IGARSS 2024, GRETSI 2023).</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="card">
       <h2>Education</h2>
-      <div class="edu-block">
-        <h3>PhD in Artificial Intelligence for Radar Imaging (SAR)</h3>
-        <p>Institut Polytechnique de Paris, Télécom Paris – 2022–2025</p>
-      </div>
-      <div class="edu-block">
-        <h3>Engineering Degree – ISEN Lille</h3>
-        <p>2019–2022 — Specialization in signal processing and artificial intelligence.</p>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__date">2022 – 2025</div>
+          <h3>PhD in Artificial Intelligence for Radar Imaging (SAR)</h3>
+          <p>Institut Polytechnique de Paris, Télécom Paris.</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2019 – 2022</div>
+          <h3>Engineering Degree — ISEN Lille</h3>
+          <p>Specialization in signal processing and artificial intelligence.</p>
+        </div>
       </div>
     </section>
   </main>
+
   <footer>
-    © 2025 Victor Gaya – <a href="https://github.com/goldentrex">GitHub</a>
+    © <span data-current-year>2026</span> Victor Gaya ·
+    <a href="https://github.com/goldentrex" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://scholar.google.com/citations?user=8nIp1XUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
   </footer>
+  <script src="header.js"></script>
 </body>
 </html>

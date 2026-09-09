@@ -1,43 +1,112 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victor Gaya – Home</title>
+  <title>Victor Gaya</title>
+  <meta name="description" content="Victor Gaya — Research Fellow at NUS working on deep learning for optical and SAR remote sensing: vision-language models, InSAR, cross-modal registration, diffusion, polarimetry and physics-informed models." />
+  <meta name="author" content="Victor Gaya" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%231f6f9e'/%3E%3Ctext%20x='32'%20y='44'%20font-family='Georgia,serif'%20font-size='32'%20font-weight='700'%20fill='white'%20text-anchor='middle'%3EVG%3C/text%3E%3C/svg%3E" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Victor Gaya" />
+  <meta property="og:description" content="Research Fellow at NUS — deep learning for optical and SAR remote sensing." />
+  <meta property="og:image" content="https://goldentrex.github.io/final_picture.JPEG" />
+  <meta property="og:url" content="https://goldentrex.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches))
+        document.documentElement.classList.add('dark');
+      else if (t === 'light') document.documentElement.classList.add('light');
+    } catch (e) {}
+  </script>
 </head>
 <body>
-  <div id="site-header"></div>
-  <script src="header.js"></script>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="publications.html">Publications</a>
-    <a href="education.html">Education & Experience</a>
-    <a href="resume_VG.pdf" target="_blank">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html">Victor Gaya</a>
+    <nav class="topbar__nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="education.html">Education &amp; Experience</a>
+      <a href="resume_VG.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="hero">
+      <img class="hero__photo" src="final_picture.JPEG" alt="Portrait of Victor Gaya" />
+      <div>
+        <h1 class="hero__name">Victor Gaya</h1>
+        <p class="hero__tagline">Deep learning for optical &amp; SAR remote sensing</p>
+        <p class="hero__role">Research Fellow, National University of Singapore</p>
+        <div class="profile-links">
+          <a href="https://scholar.google.com/citations?user=8nIp1XUAAAAJ" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            Google Scholar
+          </a>
+          <a href="https://orcid.org/0009-0004-2700-7760" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.516.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.947-1.575 3.947-3.722 0-2.016-1.453-3.722-3.884-3.722h-2.36z"/></svg>
+            ORCID
+          </a>
+          <a href="https://github.com/goldentrex" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.52 11.52 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/victor-gaya-320b1a19a/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="resume_VG.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>
+            CV
+          </a>
+        </div>
+      </div>
+    </div>
+
     <section class="card">
       <h2>About me</h2>
       <p>
-        I am a PhD graduate from <strong>Télécom Paris (Institut Polytechnique de Paris)</strong>, where I worked in collaboration with the <strong>CEA (Commissariat à l'Énergie Atomique et aux Énergies Alternatives)</strong> on deep learning methods for SAR (Synthetic Aperture Radar) imaging. I defended my thesis <em><a href="https://theses.hal.science/tel-05480014" target="_blank">Deep learning for SAR image enhancement: multi-modal fusion and interferometric denoising</a></em> in 2025.
+        I am a PhD graduate from <strong>Télécom Paris (Institut Polytechnique de Paris)</strong>, where I worked with the <strong>CEA</strong> (Commissariat à l'Énergie Atomique et aux Énergies Alternatives) on deep learning methods for SAR (Synthetic Aperture Radar) image restoration. I defended my thesis, <em><a href="https://theses.hal.science/tel-05480014" target="_blank" rel="noopener">Deep learning for SAR image enhancement: multi-modal fusion and interferometric denoising</a></em>, in 2025.
+      </p>
+      <p>
+        I am now a <strong>Research Fellow at the National University of Singapore</strong>, working on deep learning for optical and SAR remote sensing. My current topics include vision-language models, InSAR, cross-modal registration, diffusion-based image translation, calibration, polarimetry, and physics-informed models. I also co-supervise several students across these directions.
       </p>
     </section>
 
     <section class="card card--highlight">
-      <div class="current-position">
-        <div class="current-position__label">Current position</div>
-        <div class="current-position__title">Research Fellow</div>
-        <div class="current-position__org">National University of Singapore (NUS) &mdash; 2025–present</div>
-        <div class="current-position__topics">
-          <span class="topic-tag">Foundation models</span>
-          <span class="topic-tag">Teacher-student learning</span>
-          <span class="topic-tag">Complex-valued models</span>
-          <span class="topic-tag">Generative inpainting</span>
-          <span class="topic-tag">Remote sensing</span>
-        </div>
+      <div class="current-position__label">Current position</div>
+      <div class="current-position__title">Research Fellow</div>
+      <div class="current-position__org">National University of Singapore (NUS) &mdash; 2026–present</div>
+      <p class="current-position__desc">
+        Deep learning for optical &amp; SAR remote sensing. Co-supervising students on
+        vision-language models, InSAR, cross-modal registration, diffusion-based image
+        translation and calibration, alongside my own work on polarimetry and
+        physics-informed models.
+      </p>
+      <div class="topic-tags">
+        <span class="topic-tag">Vision-language models</span>
+        <span class="topic-tag">InSAR</span>
+        <span class="topic-tag">Cross-modal registration</span>
+        <span class="topic-tag">Diffusion image translation</span>
+        <span class="topic-tag">Calibration</span>
+        <span class="topic-tag">Polarimetry</span>
+        <span class="topic-tag">Physics-informed models</span>
       </div>
     </section>
+
+    <a class="card" href="publications.html" style="display:block">
+      <div class="teaser__label">Latest publication</div>
+      <div class="teaser__title">Self-supervised interferogram restoration by regularized inversion of despeckled projections</div>
+      <div class="teaser__meta">Gaya, Denis, Pinel-Puysségur, Bultingaire &amp; Tupin — <em>IEEE J-STARS</em>, 2026</div>
+    </a>
 
     <div class="quick-links">
       <a href="publications.html" class="quick-link-card">
@@ -50,12 +119,16 @@
       </a>
       <a href="contact.html" class="quick-link-card">
         <div class="quick-link-card__title">Contact</div>
-        <div class="quick-link-card__sub">GitHub, LinkedIn, ORCID</div>
+        <div class="quick-link-card__sub">Email, GitHub, Scholar, ORCID</div>
       </a>
     </div>
   </main>
+
   <footer>
-    © 2025 Victor Gaya – <a href="https://github.com/goldentrex">GitHub</a>
+    © <span data-current-year>2026</span> Victor Gaya ·
+    <a href="https://github.com/goldentrex" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://scholar.google.com/citations?user=8nIp1XUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
   </footer>
+  <script src="header.js"></script>
 </body>
 </html>
