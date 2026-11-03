@@ -44,16 +44,31 @@
       <h2>Publications</h2>
 
       <div class="pub-toolbar">
-        <span class="pub-toolbar__label">Sort</span>
-        <div class="segmented" role="group" aria-label="Sort publications">
-          <button type="button" data-sort="chrono" aria-pressed="true">Chronological</button>
-          <button type="button" data-sort="type" aria-pressed="false">By type</button>
+        <span class="pub-toolbar__label">View</span>
+        <div class="segmented" role="group" aria-label="Publication view">
+          <button type="button" data-view="list" aria-pressed="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+            List
+          </button>
+          <button type="button" data-view="graph" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.3 8.2l4.4 7.6M17.7 8.2l-4.4 7.6"/></svg>
+            Graph
+          </button>
         </div>
+        <span class="pub-toolbar__group" data-sort-controls>
+          <span class="pub-toolbar__label">Sort</span>
+          <div class="segmented" role="group" aria-label="Sort publications">
+            <button type="button" data-sort="chrono" aria-pressed="true">Chronological</button>
+            <button type="button" data-sort="type" aria-pressed="false">By type</button>
+          </div>
+        </span>
       </div>
+
+      <div id="pub-graph" class="pub-graph" hidden></div>
 
       <div id="pub-list" class="pub-list">
 
-        <article class="pub-item" data-type="journal" data-year="2026">
+        <article class="pub-item" data-type="journal" data-year="2026" data-id="jstars26" data-short="JSTARS '26" data-topics="despeckling insar selfsup complex" data-builds-on="thesis25">
           <div class="pub-item__head">
             <span class="pub-badge pub-badge--journal">Journal</span>
             <span class="pub-badge pub-badge--oa">Open access</span>
@@ -94,7 +109,7 @@
           </div>
         </article>
 
-        <article class="pub-item" data-type="conference" data-year="2026">
+        <article class="pub-item" data-type="conference" data-year="2026" data-id="ships26" data-short="APCAP '26 · Ships" data-topics="complex segmentation" data-companion="polsar26">
           <div class="pub-item__head">
             <span class="pub-badge">Conference</span>
             <span class="pub-year">2026</span>
@@ -134,7 +149,7 @@
           </div>
         </article>
 
-        <article class="pub-item" data-type="conference" data-year="2026">
+        <article class="pub-item" data-type="conference" data-year="2026" data-id="polsar26" data-short="APCAP '26 · PolSAR" data-topics="polsar translation">
           <div class="pub-item__head">
             <span class="pub-badge">Conference</span>
             <span class="pub-year">2026</span>
@@ -175,7 +190,7 @@
           </div>
         </article>
 
-        <article class="pub-item" data-type="thesis" data-year="2025">
+        <article class="pub-item" data-type="thesis" data-year="2025" data-id="thesis25" data-short="PhD thesis" data-topics="despeckling fusion insar selfsup" data-builds-on="igarss24">
           <div class="pub-item__head">
             <span class="pub-badge">Thesis</span>
             <span class="pub-badge pub-badge--oa">Open access</span>
@@ -213,7 +228,7 @@
           </div>
         </article>
 
-        <article class="pub-item" data-type="conference" data-year="2024">
+        <article class="pub-item" data-type="conference" data-year="2024" data-id="igarss24" data-short="IGARSS '24" data-topics="despeckling fusion selfsup" data-builds-on="gretsi23">
           <div class="pub-item__head">
             <span class="pub-badge">Conference</span>
             <span class="pub-year">2024</span>
@@ -252,7 +267,7 @@
           </div>
         </article>
 
-        <article class="pub-item" data-type="conference" data-year="2023">
+        <article class="pub-item" data-type="conference" data-year="2023" data-id="gretsi23" data-short="GRETSI '23" data-topics="despeckling fusion selfsup">
           <div class="pub-item__head">
             <span class="pub-badge">Conference</span>
             <span class="pub-badge pub-badge--oa">Open access</span>
