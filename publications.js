@@ -15,6 +15,7 @@
   var GROUPS = [
     { type: 'journal', label: 'Journal articles' },
     { type: 'conference', label: 'Conference papers' },
+    { type: 'talk', label: 'Talks' },
     { type: 'thesis', label: 'Thesis' }
   ];
 
@@ -156,7 +157,7 @@
     polsar: 'Polarimetry',
     translation: 'Image-to-image translation'
   };
-  var TYPE_LABEL = { journal: 'Journal', conference: 'Conference', thesis: 'Thesis' };
+  var TYPE_LABEL = { journal: 'Journal', conference: 'Conference', talk: 'Talk', thesis: 'Thesis' };
   var SVG_NS = 'http://www.w3.org/2000/svg';
 
   function svgEl(name, attrs, parent) {
@@ -290,6 +291,7 @@
     legend.innerHTML =
       '<span><i class="pg-key pg-key--journal"></i>Journal</span>' +
       '<span><i class="pg-key pg-key--conference"></i>Conference</span>' +
+      '<span><i class="pg-key pg-key--talk"></i>Talk</span>' +
       '<span><i class="pg-key pg-key--thesis"></i>Thesis</span>' +
       '<span><i class="pg-key pg-key--topic"></i>Topic</span>' +
       '<span><i class="pg-key pg-key--builds"></i>Builds on</span>' +

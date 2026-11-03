@@ -859,6 +859,10 @@ p:last-child {
   fill: var(--tag-text);
 }
 
+.pg-node--talk .pg-dot {
+  fill: var(--text-muted);
+}
+
 .pg-node--thesis .pg-dot {
   fill: var(--thesis);
 }
@@ -966,6 +970,10 @@ p:last-child {
 
 .pg-key--conference {
   background: var(--tag-text);
+}
+
+.pg-key--talk {
+  background: var(--text-muted);
 }
 
 .pg-key--thesis {
